@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>copilot_Clone</title>
+  <title>GitHub copilot_Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body class="bg-dark text-light">
+
+  <header class="text-center py-5">
+    <p class="text-muted small mb-1">Plans</p>
+    <h1 class="fw-bold mb-3">Take flight with GitHub Copilot</h1>
+    <div class="btn-group mb-4">
+      <button class="btn btn-success active" id="btnIndividual">For individuals</button>
+      <button class="btn btn-outline-light" id="btnBusiness">For businesses</button>
+    </div>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+    <div class="container-fluid">
+
+      <a class="navbar-brand d-flex align-items-center" target="_blank" href="https://github.com/">
+        <img src="assets/GitHub-Mark.png" alt="GitHub Logo" width="32" height="32"
+          class="me-2 github-logo rounded-circle">
+        GitHub
+
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarMain">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <!-- Platform -->
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Platform</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a target="_blank" class="dropdown-item" href="features.html">Features</a></li>
+                <li><a target="_blank" class="dropdown-item" href="security.html">Security</a></li>
+                <li><a target="_blank" class="dropdown-item" href="#">Team</a></li>
+                <li><a target="_blank" class="dropdown-item" href="Enterprise.html">Enterprise</a></li>
+
+
+              </ul>
+            </li>
+            <!-- Solutions (Mega Menu) -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Solutions</a>
+              <div class="dropdown-menu dropdown-menu-dark p-4 mega-menu w-100 shadow-lg border-0">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase text-secondary small mb-2">By company size</h6>
+                    <ul class="list-unstyled">
+                      <li><a target="_blank" href="#" class="dropdown-item">Enterprises</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Small and medium teams</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Startups</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Nonprofits</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase text-secondary small mb-2">By use case</h6>
+                    <ul class="list-unstyled">
+                      <li><a target="_blank" href="#" class="dropdown-item">App Modernization</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">DevSecOps</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">DevOps</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">CI/CD</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item text-primary">View all use cases →</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase text-secondary small mb-2">By industry</h6>
+                    <ul class="list-unstyled">
+                      <li><a target="_blank" href="#" class="dropdown-item">Healthcare</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Financial services</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Manufacturing</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Government</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item text-primary">View all industries →</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pt-3 border-top border-secondary mt-2">
+                  <a target="_blank" href="#" class="dropdown-item text-primary">View all solutions →</a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Resources -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a target="_blank" class="dropdown-item" href="#">AI</a></li>
+                <li><a target="_blank" class="dropdown-item" href="#">Security</a></li>
+                <li><a target="_blank" class="dropdown-item" href="#">Software Development</a></li>
+              </ul>
+            </li>
+
+            <!-- Other Tabs -->
+            <li class="nav-item"><a target="_blank" class="nav-link" href="OpenSource.html">Open Source</a></li>
+            <li class="nav-item"><a target="_blank" class="nav-link" href="Enterprise.html">Enterprise</a></li>
+            <li class="nav-item"><a target="_blank" class="nav-link" href="priceplan.html">Pricing</a></li>
+
+          </ul>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a target="_blank" class="nav-link dropdown-toggle" href="index.html" role="button"
+              data-bs-toggle="dropdown">Home</a>
+          </ul>
+
+          <!-- Search bar -->
+          <form class="d-flex me-3" role="search">
+            <input class="form-control form-control-sm bg-dark text-light border-0" type="search"
+              placeholder="Search GitHub" aria-label="Search">
+          </form>
+
+          <!-- Right side -->
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item"><a target="_blank" class="btn btn-sm btn-signin" href="signin.html">Sign in</a></li>
+            <li class="nav-item"><a target="_blank" class="btn btn-sm btn-signup ms-lg-2" href="signup.html">Signup</a>
+            </li>
+            <!-- User Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                data-bs-toggle="dropdown">
+                <img src="assets/GitHub-Mark.png" alt="User Avatar" width="20" height="20" class="rounded-circle me-2">
+                Arslan
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                <li><a target="_blank" class="dropdown-item" href="profile.html">Your profile</a></li>
+                <li><a target="_blank" class="dropdown-item" href="repositories.html">Your repositories</a></li>
+                <li><a target="_blank" class="dropdown-item" href="projects.html">Your projects</a></li>
+                <li><a target="_blank" class="dropdown-item" href="stars.html">Your stars</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a target="_blank" class="dropdown-item" href="signin.html">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+        </div>
+    </div>
+  </nav>
+
+  <main class="container pb-5">
+    <section id="pricing" class="row g-4 text-center">
+      <!-- Free Plan -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-light h-100">
+          <div class="card-body">
+            <h3 class="card-title">Free</h3>
+            <p class="display-6 fw-bold">$0</p>
+            <button class="btn btn-success mb-3">Get started</button>
+            <p class="text-muted">Open in VS Code</p>
+            <hr>
+            <ul class="list-unstyled text-start small">
+              <li>✔️ 50 chat or code requests / month</li>
+              <li>✔️ 2,000 completions / month</li>
+              <li>✔️ Access to basic models</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-light h-100 border-success">
+          <div class="card-body">
+            <h3 class="card-title">Pro</h3>
+            <p class="display-6 fw-bold">$10</p>
+            <p class="text-muted">per month</p>
+            <button class="btn btn-success mb-3">Try for 30 days free</button>
+            <hr>
+            <ul class="list-unstyled text-start small">
+              <li>✔️ Unlimited agent mode and chats with GPT-5 mini1</li>
+              <li>✔️ Unlimited code completions</li>
+              <li>✔️ Access to GPT models</li>
+              <li>✔️ Access to code review, Claude Sonnet 4/4.5, GPT-5, Gemini 2.5 Pro, and more</li>
+              <li>✔️ 300 premium requests to use latest models, with the option to buy more</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pro+ Plan -->
+      <div class="col-md-4">
+        <div class="card bg-secondary text-light h-100">
+          <div class="card-body">
+            <h3 class="card-title">Pro+</h3>
+            <p class="display-6 fw-bold">$39</p>
+            <p class="text-muted">per month</p>
+            <button class="btn btn-success mb-3">Get started</button>
+            <hr>
+            <ul class="list-unstyled text-start small">
+              <li>✔️ Access to all models, including Claude Opus 4.1 and more</li>
+              <li>✔️ 5x more premium requests than Pro to use the latest models, with the option to buy more2</li>
+              <li>✔️ Access to GitHub Spark</li>
+              <li>✔️ Codex IDE extension support in VS Code</li>
+            </ul>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="text-center mt-5">
+      <h6 class="text-muted mb-3">GitHub Copilot is available on:</h6>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <span class="badge bg-dark border"> VS Code</span>
+        <span class="badge bg-dark border">JetBrains</span>
+        <span class="badge bg-dark border">Neovim</span>
+        <span class="badge bg-dark border">Visual Studio</span>
+      </div>
+      <button class="btn btn-outline-light mt-4">Compare all plan features</button>
+    </div>
+
+    <hr class="my-5">
+
+    <section id="learn" class="text-center">
+      <h2 class="fw-bold mb-4">Get the most out of GitHub Copilot</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card bg-secondary text-light h-100">
+            <div class="card-body">
+              <h5>Preview new features</h5>
+              <p class="small text-muted">Try the latest tools first.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">See previews</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-secondary text-light h-100">
+            <div class="card-body">
+              <h5>Explore the blog</h5>
+              <p class="small text-muted">Discover insights and best practices.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Read Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card bg-secondary text-light h-100">
+            <div class="card-body">
+              <h5>Visit Trust Center</h5>
+              <p class="small text-muted">Learn about security and privacy.</p>
+              <a href="#" class="btn btn-outline-light btn-sm">Go to Trust</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer text-muted pt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-12 col-md-4">
+          <div class="d-flex align-items-start gap-3">
+            <div class="me-2">
+              <a href="https://github.com/">
+                <img src="assets/GitHub-Mark.png" alt="GitHub Logo" width="36" height="36">
+              </a>
+            </div>
+            <div>
+              <div class="brand">GitHub</div>
+              <p class="small text-muted mb-2">Subscribe to the GitHub developer newsletter<br><small
+                  class="text-muted">Tips, guides, and best practices — twice a month.</small></p>
+              <form class="d-flex gap-2" onsubmit="event.preventDefault(); alert('Subscribed (demo)');">
+                <input class="form-control form-control-sm bg-dark text-light border-1" placeholder="Enter email"
+                  aria-label="Email" required>
+                <button class="btn btn-outline-light btn-sm subscribe-btn">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-muted">Platform</h6>
+          <ul class="list-unstyled small">
+            <li><a href="https://github.com/features">Features</a></li>
+            <li><a href="https://github.com/enterprise">Enterprise</a></li>
+            <li><a href="https://github.com/features/copilot">Copilot</a></li>
+            <li><a href="https://github.com/security">Security</a></li>
+            <li><a href="https://github.com/pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-muted">Ecosystem</h6>
+          <ul class="list-unstyled small">
+            <li><a href="https://docs.github.com/">Docs</a></li>
+            <li><a href="https://partner.github.com/">Partners</a></li>
+            <li><a href="https://education.github.com/">Education</a></li>
+            <li><a href="https://cli.github.com/">GitHub CLI</a></li>
+            <li><a href="https://desktop.github.com/">GitHub Desktop</a></li>
+            <li><a href="https://github.com/mobile">GitHub Mobile</a></li>
+            <li><a href="https://github.com/marketplace">Marketplace</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-muted">Support</h6>
+          <ul class="list-unstyled small">
+            <li><a href="https://docs.github.com/en">Help Docs</a></li>
+            <li><a href="https://github.community/">Community Forum</a></li>
+            <li><a href="https://support.github.com/">Professional Support</a></li>
+            <li><a href="https://status.github.com/">Status</a></li>
+            <li><a href="https://skills.github.com/">GitHub Skills</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h6 class="text-muted">Company</h6>
+          <ul class="list-unstyled small">
+            <li><a href="https://github.com/about">About</a></li>
+            <li><a href="https://github.blog/">Blog</a></li>
+            <li><a href="https://github.com/about/careers">Careers</a></li>
+            <li><a href="https://resources.github.com/">Resources</a></li>
+            <li><a href="https://shop.github.com/">Shop</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom mt-5 py-3">
+      <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <div class="small">© 2025 GitHub, Inc. &nbsp; &middot; &nbsp; <a href="https://github.com/site/terms">Terms</a>
+          &nbsp; &middot; &nbsp; <a
+            href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement">Privacy</a> &nbsp;
+          &middot; &nbsp; <a href="https://github.com/site-map">Sitemap</a></div>
+        <div class="d-flex align-items-center gap-3">
+          <a href="https://linkedin.com/company/github" class="text-muted small"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/github/" class="text-muted small"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.youtube.com/github" class="text-muted small"><i class="bi bi-youtube"></i></a>
+          <a href="https://twitter.com/github" class="text-muted small"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.tiktok.com/@github" class="text-muted small"><i class="bi bi-tiktok"></i></a>
+          <a href="https://github.com/" class="text-muted small"><i class="bi bi-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

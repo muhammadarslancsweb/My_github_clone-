@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header class=" container mt-5">
+    <h1>Security Page</h1>
+    <p>Welcome to the Security section of our GitHub clone website. Here, users
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+    <div class="container-fluid">
+
+      <a class="navbar-brand d-flex align-items-center" target="_blank" href="https://github.com/">
+        <img src="assets/GitHub-Mark.png" alt="GitHub Logo" width="32" height="32"
+          class="me-2 github-logo rounded-circle">
+        GitHub
+
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarMain">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <!-- Platform -->
+            <li class="nav-item dropdown">
+
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Platform</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a target="_blank" class="dropdown-item" href="features.html">Features</a></li>
+                <li><a target="_blank" class="dropdown-item" href="security.html">Security</a></li>
+                <li><a target="_blank" class="dropdown-item" href="#">Team</a></li>
+                <li><a target="_blank" class="dropdown-item" href="Enterprise.html">Enterprise</a></li>
+
+
+              </ul>
+            </li>
+            <!-- Solutions (Mega Menu) -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Solutions</a>
+              <div class="dropdown-menu dropdown-menu-dark p-4 mega-menu w-100 shadow-lg border-0">
+                <div class="row">
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase text-secondary small mb-2">By company size</h6>
+                    <ul class="list-unstyled">
+                      <li><a target="_blank" href="#" class="dropdown-item">Enterprises</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Small and medium teams</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Startups</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Nonprofits</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase text-secondary small mb-2">By use case</h6>
+                    <ul class="list-unstyled">
+                      <li><a target="_blank" href="#" class="dropdown-item">App Modernization</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">DevSecOps</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">DevOps</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">CI/CD</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item text-primary">View all use cases →</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <h6 class="text-uppercase text-secondary small mb-2">By industry</h6>
+                    <ul class="list-unstyled">
+                      <li><a target="_blank" href="#" class="dropdown-item">Healthcare</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Financial services</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Manufacturing</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item">Government</a></li>
+                      <li><a target="_blank" href="#" class="dropdown-item text-primary">View all industries →</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="pt-3 border-top border-secondary mt-2">
+                  <a target="_blank" href="#" class="dropdown-item text-primary">View all solutions →</a>
+                </div>
+              </div>
+            </li>
+
+            <!-- Resources -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Resources</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a target="_blank" class="dropdown-item" href="#">AI</a></li>
+                <li><a target="_blank" class="dropdown-item" href="#">Security</a></li>
+                <li><a target="_blank" class="dropdown-item" href="#">Software Development</a></li>
+              </ul>
+            </li>
+
+            <!-- Other Tabs -->
+            <li class="nav-item"><a target="_blank" class="nav-link" href="OpenSource.html">Open Source</a></li>
+            <li class="nav-item"><a target="_blank" class="nav-link" href="Enterprise.html">Enterprise</a></li>
+            <li class="nav-item"><a target="_blank" class="nav-link" href="priceplan.html">Pricing</a></li>
+
+          </ul>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <a target="_blank" class="nav-link dropdown-toggle" href="index.html" role="button"
+              data-bs-toggle="dropdown">Home</a>
+          </ul>
+
+          <!-- Search bar -->
+          <form class="d-flex me-3" role="search">
+            <input class="form-control form-control-sm bg-dark text-light border-0" type="search"
+              placeholder="Search GitHub" aria-label="Search">
+          </form>
+
+          <!-- Right side -->
+          <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+            <li class="nav-item"><a target="_blank" class="btn btn-sm btn-signin" href="signin.html">Sign in</a></li>
+            <li class="nav-item"><a target="_blank" class="btn btn-sm btn-signup ms-lg-2" href="signup.html">Signup</a>
+            </li>
+            <!-- User Dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                data-bs-toggle="dropdown">
+                <img src="assets/GitHub-Mark.png" alt="User Avatar" width="20" height="20" class="rounded-circle me-2">
+                Arslan
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                <li><a target="_blank" class="dropdown-item" href="profile.html">Your profile</a></li>
+                <li><a target="_blank" class="dropdown-item" href="repositories.html">Your repositories</a></li>
+                <li><a target="_blank" class="dropdown-item" href="projects.html">Your projects</a></li>
+                <li><a target="_blank" class="dropdown-item" href="stars.html">Your stars</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a target="_blank" class="dropdown-item" href="signin.html">Sign out</a></li>
+              </ul>
+            </li>
+          </ul>
+
+
+        </div>
+    </div>
+  </nav>
+
+
+  <main class="container mt-4">
+    <section class="security-features my-5">
+      <div class="container mt-4">
+        <h2>Security Features</h2>
+        <ul>
+          <li><a target="_blank" href=""> Two-factor authentication (2FA)</a> </li>
+          <li> <a target="_blank" href=""> Security alerts and notifications</a> </li>
+          <li><a target="_blank" href=""> Code scanning and analysis</a> </li>
+          <li><a target="_blank" href=""> Dependabot alerts</a> </li>
+          <li> <a target="_blank" href=""> Security policies and best practices</a> </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="col-md-4">
+        <div class="card bg-secondary text-light h-100">
+          <div class="card-body">
+            <h3 class="card-title"></h3>
+            <p class="display-6 fw-bold">$0</p>
+            <button class="btn btn-success mb-3">Get started</button>
+            <p class="text-muted">Open in VS Code</p>
+            <hr>
+            <ul class="list-unstyled text-start small">
+              <li>✔️ 50 chat or code requests / month</li>
+              <li>✔️ Access to basic models</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</body>
+
+</html>

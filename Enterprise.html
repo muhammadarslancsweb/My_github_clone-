@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Clone — Enterprises (Bootstrap 5)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+            <div class="container-fluid">
+
+                <a class="navbar-brand d-flex align-items-center" target="_blank" href="https://github.com/">
+                    <img src="assets/GitHub-Mark.png" alt="GitHub Logo" width="32" height="32"
+                        class="me-2 github-logo rounded-circle">
+                    GitHub
+
+
+                    <!-- Toggle button -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Navbar Links -->
+                    <div class="collapse navbar-collapse" id="navbarMain">
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <!-- Platform -->
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Platform</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a target="_blank" class="dropdown-item" href="features.html">Features</a></li>
+                                    <li><a target="_blank" class="dropdown-item" href="security.html">Security</a></li>
+                                    <li><a target="_blank" class="dropdown-item" href="#">Team</a></li>
+                                    <li><a target="_blank" class="dropdown-item" href="Enterprise.html">Enterprise</a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                            <!-- Solutions (Mega Menu) -->
+                            <li class="nav-item dropdown position-static">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Solutions</a>
+                                <div class="dropdown-menu dropdown-menu-dark p-4 mega-menu w-100 shadow-lg border-0">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h6 class="text-uppercase text-secondary small mb-2">By company size</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a target="_blank" href="#" class="dropdown-item">Enterprises</a>
+                                                </li>
+                                                <li><a target="_blank" href="#" class="dropdown-item">Small and medium
+                                                        teams</a></li>
+                                                <li><a target="_blank" href="#" class="dropdown-item">Startups</a></li>
+                                                <li><a target="_blank" href="#" class="dropdown-item">Nonprofits</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6 class="text-uppercase text-secondary small mb-2">By use case</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a target="_blank" href="#" class="dropdown-item">App
+                                                        Modernization</a></li>
+                                                <li><a target="_blank" href="#" class="dropdown-item">DevSecOps</a></li>
+                                                <li><a target="_blank" href="#" class="dropdown-item">DevOps</a></li>
+                                                <li><a target="_blank" href="#" class="dropdown-item">CI/CD</a></li>
+                                                <li><a target="_blank" href="#" class="dropdown-item text-primary">View
+                                                        all use cases →</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <h6 class="text-uppercase text-secondary small mb-2">By industry</h6>
+                                            <ul class="list-unstyled">
+                                                <li><a target="_blank" href="#" class="dropdown-item">Healthcare</a>
+                                                </li>
+                                                <li><a target="_blank" href="#" class="dropdown-item">Financial
+                                                        services</a></li>
+                                                <li><a target="_blank" href="#" class="dropdown-item">Manufacturing</a>
+                                                </li>
+                                                <li><a target="_blank" href="#" class="dropdown-item">Government</a>
+                                                </li>
+                                                <li><a target="_blank" href="#" class="dropdown-item text-primary">View
+                                                        all industries →</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3 border-top border-secondary mt-2">
+                                        <a target="_blank" href="#" class="dropdown-item text-primary">View all
+                                            solutions →</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Resources -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown">Resources</a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a target="_blank" class="dropdown-item" href="Ai_Article.html">AI</a></li>
+                                    <li><a target="_blank" class="dropdown-item"
+                                            href="Security_Article.html">Security</a></li>
+                                    <li><a target="_blank" class="dropdown-item"
+                                            href="Software_Developement_Article.html">Software Development</a></li>
+                                </ul>
+                            </li>
+
+                            <!-- Other Tabs -->
+                            <li class="nav-item"><a target="_blank" class="nav-link" href="OpenSource.html">Open
+                                    Source</a></li>
+                            <li class="nav-item"><a target="_blank" class="nav-link"
+                                    href="Enterprise.html">Enterprise</a></li>
+                            <li class="nav-item"><a target="_blank" class="nav-link" href="priceplan.html">Pricing</a>
+                            </li>
+
+                        </ul>
+
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <a target="_blank" class="nav-link dropdown-toggle" href="index.html" role="button"
+                                data-bs-toggle="dropdown">Home</a>
+                        </ul>
+
+                        <!-- Search bar -->
+                        <form class="d-flex me-3" role="search">
+                            <input class="form-control form-control-sm bg-dark text-light border-0" type="search"
+                                placeholder="Search GitHub" aria-label="Search">
+                        </form>
+
+                        <!-- Right side -->
+                        <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+                            <li class="nav-item"><a target="_blank" class="btn btn-sm btn-signin"
+                                    href="signin.html">Sign in</a></li>
+                            <li class="nav-item"><a target="_blank" class="btn btn-sm btn-signup ms-lg-2"
+                                    href="signup.html">Signup</a>
+                            </li>
+                            <!-- User Dropdown -->
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                    data-bs-toggle="dropdown">
+                                    <img src="assets/GitHub-Mark.png" alt="User Avatar" width="20" height="20"
+                                        class="rounded-circle me-2">
+                                    Arslan
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+                                    <li><a target="_blank" class="dropdown-item" href="profile.html">Your profile</a>
+                                    </li>
+                                    <li><a target="_blank" class="dropdown-item" href="repositories.html">Your
+                                            repositories</a></li>
+                                    <li><a target="_blank" class="dropdown-item" href="projects.html">Your projects</a>
+                                    </li>
+                                    <li><a target="_blank" class="dropdown-item" href="stars.html">Your stars</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a target="_blank" class="dropdown-item" href="signin.html">Sign out</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+    <main>
+        <div class="container mt-5">
+            <div class="text-center mb-5">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo"
+                    width="72" height="72" class="mb-3">
+                <h1 class="display-5 fw-bold">Welcome to GitHub</h1>
+                <p class="lead text-muted">The world’s leading software development platform</p>
+
+            </div>
+
+
+
+            <h1>Enterprise Page</h1>
+            <p>Welcome to the Enterprise section of our GitHub clone website. Here, businesses can find solutions
+                tailored to their needs.</p>
+        </div>
+
+        <section class="enterprise-features my-5">
+            <div class="container mt-4">
+                <h2>Enterprise Features</h2>
+                <ul>
+                    <li><a target="_blank" href=""> Advanced security features</a> </li>
+                    <li> <a target="_blank" href=""> Team management tools</a> </li>
+                    <li><a target="_blank" href=""> Customizable workflows</a> </li>
+                    <li><a target="_blank" href="">Priority support</a> </li>
+                    <li> <a target="_blank" href="">Integration with enterprise systems</a> </li>
+
+                </ul>
+            </div>
+
+        </section>
+        <!-- Add more content relevant to Enterprise -->
+
+        <section>
+            <div class="container text-center my-5">
+                <strong>
+                    <h1> The AI-powered developer platform for the agent-ready enterprise </h1>
+                </strong>
+                <p>Bring your DevOps together on one secure platform built for speed, scale, and the agent-driven future
+                    of software.</p>
+            </div>
+
+            <div>
+                <div class="d-flex justify-content-center  gap-3 mb-4">
+                    <button href="signup.html" class="btn btn-lg btn-signup">Start a 30 day trial</button>
+                    <button href="signin.html" class="btn btn-lg btn-signin">Contact sales</button>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section>
+            <div>
+                <div class="container text-center my-5">
+                    <h2>Ready to get started?</h2>
+                    <p>Join the millions of developers and enterprises using GitHub to build, ship, and maintain their
+                        software.</p>
+                    <div class="d-flex justify-content-center  gap-3 mb-4">
+                        <img src="assets/duck.png" alt="duckimages" width="200" height="200">
+                        <img src="assets/cat.png" alt="duckimages" width="200" height="200">
+                        <img src="assets/halmat.png" alt="duckimages" width="200" height="200">
+
+                    </div>
+                </div>
+
+
+        </section>
+        <div class="text-center text-bold mb-5">
+
+            <strong>
+                <h1>Enterprise-grade by design </h1>
+            </strong>
+            <strong>
+                <p>
+                    A centrally governed foundation that provides the control and visibility you need to
+                    innovate securely at scale.
+                </p>
+            </strong>
+
+            <div bg-light class="d-flex justify-content-center bg-primary gap-3  ps-3 pe-5  mb-4">
+                <img src="assets/enterprise 01.PNG" alt=" GitHub enterprice pick" width="700" height="700">
+            </div>
+        </div>
+
+
+        <section class="enterprise-security my-5">
+            <div class="container">
+                <div class="row align-items-center my-5">
+                    <!-- Left Column -->
+                    <div class="col-md-5 text-center mb-4 mb-md-0">
+                        <strong>
+                            Security built into every stage of the software lifecycle.
+                        </strong>
+                        <div class="text-muted mt-3">
+                            GitHub integrates automated, developer-first security that keeps teams moving fast.
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-md-7">
+                        <ul class="text-muted">
+                            <li>
+                                Find and fix vulnerabilities natively. Automate code, secret, and dependency scanning
+                                with
+                                <a href="https://github.com/security/advanced-security" target="_blank">
+                                    GitHub Advanced Security
+                                </a>
+                                , built directly into the workflow.
+                            </li>
+                            <li>
+                                Secure your software supply chain. Visualize and maintain the dependencies in your
+                                <a href="https://github.com/security/advanced-security/software-supply-chain"
+                                    target="_blank">
+                                    software supply chain
+                                </a>.
+                            </li>
+                            <li>
+                                Control the location of your code. Enjoy SaaS agility with enhanced governance,
+                                security, and
+                                <a href="https://github.com/enterprise/data-residency" target="_blank">
+                                    flexible data residency
+                                </a>.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="border border-secondary my-5">
+            </div>
+        </section>
+
+        <section class="text-center my-5">
+            <div class="container ">
+                <p class="mb-2">
+                    <strong>
+                        Built for your most valuable asset:
+                        your developers
+                    </strong>
+                </p>
+                <p class="text-muted">
+                    GitHub transforms your engineering team into a high-performing, AI-powered force for innovation
+                    and growth.
+            </div>
+
+        </section>
+
+        <section class="my-5 py-5  text-light">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- Left side (text) -->
+                    <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
+                        <p class="mb-2">
+                            <strong>The complete development workflow, end to end</strong>
+                        </p>
+
+                        <p>
+                            <strong>
+                                Bring every stage of the development lifecycle together on one secure platform.
+                            </strong>
+                        </p>
+                        <p class="text-primary mb-4">
+                            <a href="https://github.com/features" class="text-decoration-none text-primary">Explore all
+                                features</a>
+                        </p>
+                    </div>
+
+                    <!-- Right side (video) -->
+                    <div class="col-md-6 d-flex justify-content-center justify-content-md-end">
+                        <iframe width="400" height="400" src="https://www.youtube.com/embed/Hpx4Zlu8ujk"
+                            title="End-to-End Development" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <hr class="border border-secondary my-5">
+            </div>
+        </section>
+        <section class="my-5 py-5 bg-dark text-light">
+            <div class="container">
+                <!-- Row -->
+                <div class="row align-items-center">
+
+                    <!-- Left Column -->
+                    <div class="col-md-6">
+                        <h2 class="mb-3">Scale your talent with GitHub Copilot</h2>
+                        <p class="text-muted mb-4">
+                            Go beyond code completion with AI that improves quality and problem-solving and fuels
+                            innovation.
+
+
+                        </p>
+                        <a href="https://github.com/features/copilot/copilot-business" class="btn btn-primary"> Explore
+                            Copilot for Business</a>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img width="500" src="assets/github-enterprise-copilot-coding-agent.png"
+                            alt="GitHub Enterprise Copilot Coding Agent">
+                    </div>
+
+                </div>
+
+                <!-- Optional Divider -->
+                <hr class="border border-secondary my-5">
+            </div>
+        </section>
+        <section class="my-5 py-5 bg-dark text-light">
+            <div class="container">
+                <!-- Row -->
+                <div class="row align-items-center">
+
+                    <!-- Left Column -->
+                    <div class="col-md-6">
+                        <h2 class="mb-3"> Hit the ground coding</h2>
+                        <p class="text-muted mb-4">
+
+                            Skip the ramp-up and accelerate impact with the platform trusted by over 180 million
+                            developers.
+
+
+                        </p>
+                        <a href="https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/"
+                            class="btn btn-primary">Read the Octoverse 2025 report</a>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <!-- You can replace this image/video with your own -->
+                        <img width="500" src="assets/github-enterprise-octoverse.png" alt="GitHub Enterprise Octoverse">
+                    </div>
+
+                </div>
+
+                <!-- Optional Divider -->
+                <hr class="border border-secondary my-5">
+            </div>
+        </section>
+        <section class="my-5 py-5 bg-dark text-light">
+            <div class="container">
+                <!-- Row -->
+                <div class="row align-items-center">
+
+                    <!-- Left Column -->
+                    <div class="col-md-6">
+                        <h2 class="mb-3">Flexibility to build your way</h2>
+                        <p class="text-muted mb-4">
+                            Flexibility to build your way
+                            Tap into our ecosystem of apps, actions, and models to accelerate innovation.
+
+
+                        </p>
+                        <a href="https://github.com/marketplace?locale=en-US" class="btn btn-primary">Explore the GitHub
+                            Marketplace</a>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <!-- You can replace this image/video with your own -->
+                        <img width="500" src="assets/enterprise-logos-grid.png" alt="GitHub Enterprise Security">
+                    </div>
+
+                </div>
+
+                <!-- Optional Divider -->
+                <hr class="border border-secondary my-5">
+            </div>
+        </section>
+
+        <div class="d-flex justify-content-center  gap-3  ps-3 pe-5  mb-4">
+            <img width="900" src="assets/enterprise 02.PNG" alt="">
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-muted pt-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-4">
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="me-2">
+                            <a href="https://github.com/">
+                                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+                                    alt="GitHub Logo" width="36" height="36">
+                            </a>
+                        </div>
+                        <div>
+                            <div class="brand">GitHub</div>
+                            <p class="small text-muted mb-2">Subscribe to the GitHub developer newsletter<br><small
+                                    class="text-muted">Tips, guides, and best practices — twice a month.</small></p>
+                            <form class="d-flex gap-2" onsubmit="event.preventDefault(); alert('Subscribed (demo)');">
+                                <input class="form-control form-control-sm bg-dark text-light border-1"
+                                    placeholder="Enter email" aria-label="Email" required>
+                                <button class="btn btn-outline-light btn-sm subscribe-btn">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="text-muted">Platform</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="https://github.com/features">Features</a></li>
+                        <li><a href="https://github.com/enterprise">Enterprise</a></li>
+                        <li><a href="https://github.com/features/copilot">Copilot</a></li>
+                        <li><a href="https://github.com/security">Security</a></li>
+                        <li><a href="https://github.com/pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="text-muted">Ecosystem</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="https://docs.github.com/">Docs</a></li>
+                        <li><a href="https://partner.github.com/">Partners</a></li>
+                        <li><a href="https://education.github.com/">Education</a></li>
+                        <li><a href="https://cli.github.com/">GitHub CLI</a></li>
+                        <li><a href="https://desktop.github.com/">GitHub Desktop</a></li>
+                        <li><a href="https://github.com/mobile">GitHub Mobile</a></li>
+                        <li><a href="https://github.com/marketplace">Marketplace</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="text-muted">Support</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="https://docs.github.com/en">Help Docs</a></li>
+                        <li><a href="https://github.community/">Community Forum</a></li>
+                        <li><a href="https://support.github.com/">Professional Support</a></li>
+                        <li><a href="https://status.github.com/">Status</a></li>
+                        <li><a href="https://skills.github.com/">GitHub Skills</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="text-muted">Company</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="https://github.com/about">About</a></li>
+                        <li><a href="https://github.blog/">Blog</a></li>
+                        <li><a href="https://github.com/about/careers">Careers</a></li>
+                        <li><a href="https://resources.github.com/">Resources</a></li>
+                        <li><a href="https://shop.github.com/">Shop</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom mt-5 text-center align-items-center text-muted  text-bold py-3">
+            <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+                <div class="  text-center text-muted  text-bold small">© 2025 GitHub, Muhammad Arslan. All rights
+                    reserved.
+                    <p>designed by Arslan</p>
+                </div>
+
+
+                <div class="d-flex align-items-center  gap-3">
+                    <a href="https://linkedin.com/company/github" class="text-muted small"><i
+                            class="bi bi-linkedin"></i></a>
+                    <a href="https://www.instagram.com/github/" class="text-muted small"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/github" class="text-muted small"><i class="bi bi-youtube"></i></a>
+                    <a href="https://twitter.com/github" class="text-muted small"><i class="bi bi-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@github" class="text-muted small"><i class="bi bi-tiktok"></i></a>
+                    <a href="https://github.com/" class="text-muted small"><i class="bi bi-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

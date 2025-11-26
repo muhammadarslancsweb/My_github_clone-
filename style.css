@@ -1,0 +1,638 @@
+
+
+/* ===== GENERAL ===== */
+/* Simple: basic page colors and default font */
+body {
+  background-color: rgb(0, 0, 7);
+  color: #e6edf3;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Layout: ensure footer sticks to bottom and pages center correctly */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* ===== NAVBAR ===== */
+/* Simple: top navigation bar colors and link styles */
+.navbar {
+  background-color: #010409;
+}
+
+.navbar .nav-link {
+  color: #c9d1d9 !important;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+  color: #58a6ff !important;
+}
+
+.btn-signin {
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  background-color: transparent;
+}
+
+.btn-signin:hover {
+  background-color: #21262d;
+}
+
+.btn-signup {
+  background-color: #238636;
+  color: #fff;
+  border: none;
+}
+
+.btn-signup:hover {
+  background-color: #2ea043;
+}
+
+/* ===== FOOTER ===== */
+/* Simple: styles for the footer at the bottom of pages */
+.footer {
+  background-color: #0d1117;
+  border-top: 1px solid #21262d;
+  padding-bottom: 2rem;
+}
+
+.card {
+  border-radius: 10px;
+  border: 1px solid #21262d;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #238636;
+}
+
+.btn-success {
+  background-color: #238636;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #2ea043;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+hr {
+  border-color: #30363d;
+}
+
+header .btn-group button {
+  min-width: 150px;
+}
+
+.badge {
+  color: #c9d1d9;
+  border: 1px solid #30363d;
+  padding: 0.6em 1em;
+}
+
+/* --- Left (GitHub brand + form) --- */
+.footer .col-md-4 {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer .col-md-4 .me-2 {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .col-md-4 svg {
+  width: 40px;
+  height: 40px;
+  fill: #ffffff;
+}
+
+.footer .brand {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+/* --- Newsletter text + form --- */
+.footer p.small {
+  color: #8b949e;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+
+.footer form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer .form-control {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  color: #e6edf3;
+  height: 36px;
+  font-size: 0.875rem;
+  flex: 1;
+}
+
+.footer .form-control::placeholder {
+  color: #8b949e;
+}
+
+.footer .subscribe-btn {
+  height: 36px;
+  font-size: 0.875rem;
+  padding: 0 1rem;
+  border-color: #8b949e;
+  color: #e6edf3;
+}
+
+.footer .subscribe-btn:hover {
+  background-color: #21262d;
+}
+
+/* --- Link columns --- */
+.footer h6 {
+  color: #8b949e;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer ul li {
+  margin-bottom: 0.25rem;
+}
+
+.footer ul li a {
+  color: #c9d1d9;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer ul li a:hover {
+  color: #58a6ff;
+  text-decoration: underline;
+}
+
+/* --- Bottom bar --- */
+.footer-bottom {
+  border-top: 1px solid #21262d;
+  color: #8b949e;
+}
+
+.footer-bottom a {
+  color: #8b949e;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #58a6ff;
+  text-decoration: underline;
+}
+
+.footer-bottom i {
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.footer-bottom i:hover {
+  color: #58a6ff;
+}
+
+/* ===== RESPONSIVE ===== */
+/* Simple: rules to make layout fit smaller screens (phones/tablets) */
+@media (max-width: 991.98px) {
+  .footer .col-md-4 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer .col-md-4 form {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .col-md-4 .me-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer .subscribe-btn {
+    width: 100%;
+  }
+
+  .footer-bottom .container {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 10px !important;
+  }
+}
+
+/* ===== AUTH PAGES ===== */
+/* Simple: styles for sign-in / sign-up pages (cards, inputs, buttons) */
+.card.bg-body-secondary {
+  background-color: #161b22 !important;
+  border: 1px solid #30363d !important;
+  border-radius: 8px;
+}
+
+.form-control:focus {
+  border-color: #58a6ff !important;
+  box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.25);
+}
+
+.btn-success {
+  background-color: #238636;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: #2ea043;
+}
+
+.btn-secondary {
+  background-color: #30363d;
+  border: none;
+  color: #e6edf3;
+}
+
+.btn-secondary:hover {
+  background-color: #484f58;
+}
+
+.text-muted {
+  color: #8b949e !important;
+}
+
+
+/* ===============================
+  PROFILE SECTION ONLY
+  Simple: styles used on the user profile page (avatar, tabs, repo cards)
+================================== */
+
+/* Profile Image */
+.profile-img {
+  width: 180px;
+  border: 3px solid #30363d;
+  border-radius: 50%;
+}
+
+/* Sidebar Text */
+.profile-sidebar h3 {
+  font-weight: 700;
+}
+
+.profile-sidebar h6 {
+  color: #8b949e;
+}
+
+/* Tabs (Overview, Repositories, Projects...) */
+.profile-tabs .nav-link {
+  color: #c9d1d9 !important;
+  font-weight: 500;
+  border: none;
+}
+
+.profile-tabs .nav-link:hover {
+  color: #fff !important;
+}
+
+.profile-tabs .nav-link.active {
+  color: #fff !important;
+  border-bottom: 2px solid #f78166 !important;
+}
+
+/* Repo Cards */
+.repo-card {
+  background-color: #161b22 !important;
+  border: 1px solid #30363d !important;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+}
+
+.repo-card:hover {
+  transform: translateY(-3px);
+  border-color: #58a6ff !important;
+}
+
+/* Pinned Section Title */
+.pinned-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Language Badges */
+.repo-card .badge {
+  font-size: 0.75rem;
+  padding: 5px 8px;
+}
+
+/* GitHub Dark Background Blocks */
+.bg-github-dark {
+  background-color: #161b22 !important;
+}
+
+/* Horizontal Line */
+.profile-divider {
+  border-color: #30363d !important;
+}
+
+/* Followers / Following */
+.profile-follow-info span {
+  color: #c9d1d9;
+  font-size: 0.9rem;
+}
+
+/* Organization Icons */
+.profile-org img {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+/* GitHub-style profile dropdown */
+.github-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.github-dropdown-toggle {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.github-dropdown-menu {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 220px;
+  background: #24292e;
+  /* GitHub dark */
+  border-radius: 8px;
+  padding: 8px 0;
+  display: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  z-index: 9999;
+}
+
+.github-dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  color: #c9d1d9;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.github-dropdown-menu a:hover {
+  background: #30363d;
+  color: #fff;
+}
+
+.github-dropdown-divider {
+  height: 1px;
+  background: #30363d;
+  margin: 6px 0;
+}
+
+/* Show dropdown on click */
+.github-dropdown.open .github-dropdown-menu {
+  display: block;
+}
+
+.article-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.article-card .card {
+  background: #0d1117;
+  border: 1px solid #21262d;
+  border-radius: 12px;
+  transition: transform .3s, box-shadow .3s, border-color .3s;
+}
+
+.article-card .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  border-color: #58a6ff;
+}
+
+.article-card .card-body {
+  padding: 15px;
+}
+
+.article-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.article-card img {
+  border-radius: 10px;
+  transition: transform .3s;
+}
+
+.article-card:hover img {
+  transform: scale(1.02);
+}
+
+.article-card .learn {
+  color: #58a6ff;
+  font-weight: 500;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+
+.logo-big {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-small {
+  width: 36px;
+  height: 36px;
+}
+
+.card-box {
+  width: 360px;
+}
+
+.card-box {
+  margin: 0 auto;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+.team-left,
+.team-right {
+  position: relative;
+  height: 650px;
+}
+
+/* ================================
+   TEAM LOGO SECTION
+   Simple: positions small profile or company logos in two columns
+================================ */
+
+/* Common logo styles */
+.team-left img,
+.team-right img {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ================================
+   LEFT — USE PERCENTAGES (Responsive)
+================================ */
+.team-left img:nth-child(1) {
+  top: 0%;
+  left: 0%;
+}
+
+.team-left img:nth-child(2) {
+  top: 12%;
+  left: 35%;
+}
+
+.team-left img:nth-child(3) {
+  top: 24%;
+  left: 0%;
+}
+
+.team-left img:nth-child(4) {
+  top: 36%;
+  left: 30%;
+}
+
+.team-left img:nth-child(5) {
+  top: 48%;
+  left: 0%;
+}
+
+.team-left img:nth-child(6) {
+  top: 60%;
+  left: 35%;
+}
+
+.team-left img:nth-child(7) {
+  top: 72%;
+  left: 0%;
+}
+
+.team-left img:nth-child(8) {
+  top: 84%;
+  left: 30%;
+}
+
+/* ================================
+   RIGHT — USE PERCENTAGES (Responsive)
+================================ */
+.team-right img:nth-child(1) {
+  top: 0%;
+  left: 0%;
+}
+
+.team-right img:nth-child(2) {
+  top: 12%;
+  left: 30%;
+}
+
+.team-right img:nth-child(3) {
+  top: 24%;
+  left: 0%;
+}
+
+.team-right img:nth-child(4) {
+  top: 36%;
+  left: 30%;
+}
+
+.team-right img:nth-child(5) {
+  top: 48%;
+  left: 0%;
+}
+
+.team-right img:nth-child(6) {
+  top: 60%;
+  left: 30%;
+}
+
+.team-right img:nth-child(7) {
+  top: 72%;
+  left: 0%;
+}
+
+/* ================================
+   TABLET FIX (<= 992px)
+================================ */
+@media (max-width: 992px) {
+
+  .team-left,
+  .team-right {
+    height: 450px;
+  }
+
+  .team-left img,
+  .team-right img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* ================================
+   MOBILE FIX (<= 768px)
+================================ */
+@media (max-width: 768px) {
+
+  .team-left,
+  .team-right {
+    height: auto;
+    text-align: center;
+  }
+
+  .team-left img,
+  .team-right img {
+    position: static !important;
+    display: inline-block;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arslan · Repositories</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root{--bg:#0d1117;--card:#0f1720;--muted:#8b949e}
+    body{background:var(--bg); color:#c9d1d9; font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto;}
+    .container-max{max-width:1100px;}
+    .repo-list{background:var(--card);border:1px solid rgba(255,255,255,0.03);border-radius:12px;padding:18px}
+    .repo-item{padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.02)}
+    .repo-item:last-child{border-bottom:none}
+    .lang-dot{height:12px;width:12px;border-radius:50%;display:inline-block;margin-right:6px;vertical-align:middle}
+    .small-muted{color:var(--muted);font-size:13px}
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+    <div class="container-fluid">
+
+      <a class="navbar-brand d-flex align-items-center" target="_blank" href="https://github.com/">
+        <img src="assets/GitHub-Mark.png" alt="GitHub Logo" width="32" height="32" class="me-2 github-logo rounded-circle">
+        GitHub
+      </a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="security.html">Security</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="Enterprise.html">Enterprise</a></li>
+        </ul>
+
+        <form class="d-flex me-3" role="search">
+          <input class="form-control form-control-sm bg-dark text-light border-0" type="search" placeholder="Search GitHub" aria-label="Search">
+        </form>
+
+        <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a class="btn btn-sm btn-signin" href="signin.html">Sign in</a></li>
+          <li class="nav-item"><a class="btn btn-sm btn-signup ms-lg-2" href="signup.html">Signup</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <main class="container container-max mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <div>
+        <h4 class="mb-0">Repositories</h4>
+        <div class="small-muted">21 repositories</div>
+      </div>
+      <div class="d-flex gap-2">
+        <input class="form-control form-control-sm" style="width:240px" placeholder="Find a repository...">
+        <button class="btn btn-sm btn-outline-secondary">New</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <!-- left filter -->
+      <div class="col-lg-3 mb-3">
+        <div class="p-3" style="background:#071219;border-radius:10px;border:1px solid rgba(255,255,255,0.03)">
+          <h6 class="mb-2">Type</h6>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="all">
+            <label class="form-check-label small-muted" for="all">All</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="sources">
+            <label class="form-check-label small-muted" for="sources">Sources</label>
+          </div>
+
+          <hr style="border-color:rgba(255,255,255,0.03)">
+          <h6 class="mb-2">Language</h6>
+          <div class="small-muted">JavaScript (12)</div>
+          <div class="small-muted">HTML (4)</div>
+          <div class="small-muted">CSS (5)</div>
+        </div>
+      </div>
+
+      <!-- repo list -->
+      <div class="col-lg-9">
+        <div class="repo-list">
+          <!-- repo item -->
+          <div class="repo-item d-flex justify-content-between">
+            <div>
+              <a href="#" class="h6 text-white text-decoration-none">awesome-tool</a>
+              <div class="small-muted">Small CLI helper for quick tasks</div>
+              <div class="small-muted mt-1"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript · Updated 3 days ago</div>
+            </div>
+            <div class="text-end small-muted">
+              <div>★ 56</div>
+              <div>Fork 12</div>
+            </div>
+          </div>
+
+          <div class="repo-item d-flex justify-content-between">
+            <div>
+              <a href="#" class="h6 text-white text-decoration-none">portfolio</a>
+              <div class="small-muted">My personal site built with Bootstrap</div>
+              <div class="small-muted mt-1"><span class="lang-dot" style="background:#563d7c"></span>HTML · Updated 2 weeks ago</div>
+            </div>
+            <div class="text-end small-muted">
+              <div>★ 18</div>
+              <div>Fork 2</div>
+            </div>
+          </div>
+
+          <div class="repo-item d-flex justify-content-between">
+            <div>
+              <a href="#" class="h6 text-white text-decoration-none">ui-kit</a>
+              <div class="small-muted">Reusable UI components</div>
+              <div class="small-muted mt-1"><span class="lang-dot" style="background:#563d7c"></span>CSS · Updated 1 month ago</div>
+            </div>
+            <div class="text-end small-muted">
+              <div>★ 10</div>
+              <div>Fork 0</div>
+            </div>
+          </div>
+
+          <div class="text-center mt-3">
+            <button class="btn btn-sm btn-outline-secondary">Show more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

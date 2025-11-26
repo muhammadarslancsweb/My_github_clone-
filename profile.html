@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arslan – GitHub Profile Clone</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-dark text-light">
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2">
+    <div class="container-fluid">
+
+      <a class="navbar-brand d-flex align-items-center" target="_blank" href="https://github.com/">
+        <img src="assets/GitHub-Mark.png" alt="GitHub Logo" width="32" height="32" class="me-2 github-logo rounded-circle">
+        GitHub
+      </a>
+
+      <!-- Toggle button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="security.html">Security</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="Enterprise.html">Enterprise</a></li>
+        </ul>
+
+        <form class="d-flex me-3" role="search">
+          <input class="form-control form-control-sm bg-dark text-light border-0" type="search" placeholder="Search GitHub" aria-label="Search">
+        </form>
+
+        <ul class="navbar-nav mb-2 mb-lg-0 align-items-center">
+          <li class="nav-item"><a class="btn btn-sm btn-signin" href="signin.html">Sign in</a></li>
+          <li class="nav-item"><a class="btn btn-sm btn-signup ms-lg-2" href="signup.html">Signup</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!doctype html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Arslan · GitHub-style Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      :root {
+        --bg: #0d1117;
+        --muted: #8b949e;
+        --card: #0f1720;
+        --accent: #238636;
+      }
+
+      body {
+        background: var(--bg);
+        color: #c9d1d9;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      }
+
+      .container-max {
+        max-width: 1100px;
+      }
+
+      .left-card {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+        border: 1px solid rgba(240, 246, 252, 0.04);
+        border-radius: 12px;
+        padding: 20px;
+      }
+
+      .profile-avatar {
+        width: 104px;
+        height: 104px;
+        border-radius: 12px;
+        object-fit: cover;
+        border: 2px solid rgba(255, 255, 255, 0.06);
+      }
+
+      .username {
+        color: #c9d1d9;
+        font-weight: 600
+      }
+
+      .meta {
+        color: var(--muted);
+        font-size: 14px
+      }
+
+      .btn-edit {
+        background: #22272a;
+        border: 1px solid rgba(240, 246, 252, 0.04);
+        color: #c9d1d9
+      }
+
+      .tab-card {
+        background: var(--card);
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        border-radius: 12px;
+        padding: 20px;
+      }
+
+      .repo-card {
+        background: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+        padding: 14px 0;
+      }
+
+      .lang-dot {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 6px;
+        vertical-align: middle
+      }
+
+      .small-muted {
+        color: var(--muted);
+        font-size: 13px
+      }
+
+      .nav-crumbs a {
+        color: var(--muted);
+        text-decoration: none
+      }
+
+      .sidebar-section {
+        margin-top: 14px
+      }
+
+      .orgs img {
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        margin-right: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.03)
+      }
+
+      @media (max-width:991px) {
+        .left-col {
+          margin-bottom: 15px
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Top nav -->
+
+    <!-- Navbar -->
+
+
+
+    <!-- Page body -->
+    <main class="container container-max mt-4">
+      <div class="row gx-4">
+        <!-- LEFT SIDEBAR -->
+        <aside class="col-lg-4 left-col">
+          <div class="left-card">
+            <div class="d-flex align-items-start gap-3">
+              <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="avatar" class="profile-avatar">
+              <div class="flex-fill">
+                <div class="d-flex align-items-center justify-content-between">
+                  <div>
+                    <div style="font-size:20px;font-weight:700">Muhammad Arslan</div>
+                    <div class="meta">@arslan-dev</div>
+                  </div>
+                  <button class="btn btn-sm btn-edit">Edit profile</button>
+                </div>
+                <p class="small-muted mt-2">Frontend Developer · JavaScript, Bootstrap, Flutter learner. Building clean
+                  UI & small tools.</p>
+                <div class="d-flex gap-3 mt-3 small-muted">
+                  <div><strong style="color:#c9d1d9">12</strong> followers</div>
+                  <div><strong style="color:#c9d1d9">8</strong> following</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-section">
+              <div class="small-muted mb-2">Highlights</div>
+              <div class="d-flex gap-2 flex-wrap">
+                <span class="badge rounded-pill text-bg-dark">Open Source</span>
+                <span class="badge rounded-pill text-bg-dark">Design</span>
+                <span class="badge rounded-pill text-bg-dark">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="sidebar-section">
+              <div class="small-muted mb-2">Organizations</div>
+              <div class="d-flex orgs align-items-center">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="org">
+                <img src="https://avatars.githubusercontent.com/u/69631?v=4" alt="org">
+              </div>
+            </div>
+
+            <div class="sidebar-section">
+              <div class="small-muted mb-2">Links</div>
+              <div class="small-muted">
+                <div>📍 Karachi, Pakistan</div>
+                <div>🔗 <a href="#" class="small-muted text-decoration-none">arslan.dev</a></div>
+                <div>💼 <a href="#" class="small-muted text-decoration-none">Twitter</a></div>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+
+        <!-- RIGHT CONTENT -->
+        <section class="col-lg-8">
+          <div class="tab-card">
+            <!-- Tabs -->
+            <ul class="nav nav-tabs nav-fill mb-3" id="profileTabs" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                  type="button" role="tab">Overview</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="repos-tab" data-bs-toggle="tab" data-bs-target="#repos" type="button"
+                  role="tab">Repositories</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="projects-tab" data-bs-toggle="tab" data-bs-target="#projects" type="button"
+                  role="tab">Projects</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="packages-tab" data-bs-toggle="tab" data-bs-target="#packages" type="button"
+                  role="tab">Packages</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="stars-tab" data-bs-toggle="tab" data-bs-target="#stars" type="button"
+                  role="tab">Stars</button>
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <!-- OVERVIEW -->
+              <div class="tab-pane fade show active" id="overview" role="tabpanel">
+                <h5 class="mb-2">Pinned</h5>
+                <div class="row row-cols-1 g-3">
+                  <!-- pinned repo -->
+                  <div class="col">
+                    <div class="d-flex align-items-start gap-3 repo-card">
+                      <div class="flex-fill">
+                        <a href="#" class="h6 text-white text-decoration-none">cool-project</a>
+                        <p class="small-muted mb-1">A small utility to make life easier — readme + examples included.
+                        </p>
+                        <div class="small-muted">
+                          <span class="me-3"><span class="lang-dot" style="background:#f1e05a"></span>JavaScript</span>
+                          <span class="me-3">★ 24</span>
+                          <span>Updated 2 days ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- another -->
+                  <div class="col">
+                    <div class="d-flex align-items-start gap-3 repo-card">
+                      <div class="flex-fill">
+                        <a href="#" class="h6 text-white text-decoration-none">ui-kit</a>
+                        <p class="small-muted mb-1">A small Bootstrap-based UI kit for dashboards and personal sites.
+                        </p>
+                        <div class="small-muted">
+                          <span class="me-3"><span class="lang-dot" style="background:#2b7489"></span>CSS</span>
+                          <span class="me-3">★ 10</span>
+                          <span>Updated 1 month ago</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="my-3" style="border-color:rgba(255,255,255,0.03)">
+
+                <h5 class="mb-2">Contribution activity</h5>
+                <p class="small-muted">Contributions graph placeholder (you can later add an SVG or image here).</p>
+              </div>
+
+              <!-- REPOS TAB (small list preview) -->
+              <div class="tab-pane fade" id="repos" role="tabpanel">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="small-muted">21 repositories</div>
+                  <div>
+                    <button class="btn btn-sm btn-outline-secondary">New</button>
+                  </div>
+                </div>
+
+                <!-- repo list -->
+                <div>
+                  <div class="repo-card">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <a href="#" class="h6 text-white text-decoration-none">awesome-tool</a>
+                        <div class="small-muted">Tools · CLI helper</div>
+                        <div class="small-muted mt-1"><span class="lang-dot"
+                            style="background:#f1e05a"></span>JavaScript · Updated 3 days ago</div>
+                      </div>
+                      <div class="text-end small-muted">
+                        <div>★ 56</div>
+                        <div>Fork 12</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="repo-card">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                        <a href="#" class="h6 text-white text-decoration-none">portfolio</a>
+                        <div class="small-muted">Personal website built with Bootstrap</div>
+                        <div class="small-muted mt-1"><span class="lang-dot" style="background:#563d7c"></span>HTML ·
+                          Updated 2 weeks ago</div>
+                      </div>
+                      <div class="text-end small-muted">
+                        <div>★ 18</div>
+                        <div>Fork 2</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- load more -->
+                  <div class="text-center mt-3">
+                    <button class="btn btn-sm btn-outline-secondary">Show more</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PROJECTS -->
+              <div class="tab-pane fade" id="projects" role="tabpanel">
+                <h6 class="mb-3">Projects</h6>
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                  <div class="col">
+                    <div class="p-3"
+                      style="background:#071219;border-radius:8px;border:1px solid rgba(255,255,255,0.03)">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <a href="#" class="text-white h6 text-decoration-none">Website revamp</a>
+                          <div class="small-muted">In progress · 4 cards</div>
+                        </div>
+                        <div class="small-muted">Updated today</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="p-3"
+                      style="background:#071219;border-radius:8px;border:1px solid rgba(255,255,255,0.03)">
+                      <div class="d-flex justify-content-between">
+                        <div>
+                          <a href="#" class="text-white h6 text-decoration-none">Toolkit</a>
+                          <div class="small-muted">Draft · 2 cards</div>
+                        </div>
+                        <div class="small-muted">Updated 2 days ago</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PACKAGES placeholder -->
+              <div class="tab-pane fade" id="packages" role="tabpanel">
+                <p class="small-muted">No packages published.</p>
+              </div>
+
+              <!-- STARS -->
+              <div class="tab-pane fade" id="stars" role="tabpanel">
+                <h6 class="mb-3">Starred repositories</h6>
+                <div class="repo-card">
+                  <a href="#" class="h6 text-white text-decoration-none">some-cool-lib</a>
+                  <div class="small-muted">A library that does something cool</div>
+                </div>
+                <div class="repo-card">
+                  <a href="#" class="h6 text-white text-decoration-none">design-system</a>
+                  <div class="small-muted">A design system and component library</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  </html>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
